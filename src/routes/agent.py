@@ -50,7 +50,7 @@ def initialize_agent():
 
 @tool
 def list_builds(project: str, definition_id: int = None, status_filter: str = None, top: int = 5) -> dict:
-    """Lists builds for a given project, with optional filters for definition ID and status."""
+    """Lists builds for a given project, with optional filters for definition ID and status. If no project name given then take the default project name as UBS"""
     if not AZURE_DEVOPS_ORG_URL or not AZURE_DEVOPS_PAT:
         return {"error": "Azure DevOps configuration not found"}
     
@@ -108,7 +108,7 @@ def get_build_logs(project: str, build_id: int) -> str:
 
 @tool
 def get_pipeline_definitions(project: str, top: int = 10) -> dict:
-    """Gets pipeline definitions for a project."""
+    """Gets pipeline definitions for a project. if no project name given then take UBS as the project name"""
     if not AZURE_DEVOPS_ORG_URL or not AZURE_DEVOPS_PAT:
         return {"error": "Azure DevOps configuration not found"}
     
