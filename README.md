@@ -8,6 +8,15 @@
 
 This application provides a user-friendly web interface where developers and operations teams can interact with an AI agent using natural language queries. Instead of manually sifting through extensive build logs or navigating complex Azure DevOps portals, users can simply ask questions like "Why did the last build fail for project X?" or "List all successful builds for pipeline Y in the last week." The agent will then intelligently process these requests, fetch relevant data from Azure DevOps, analyze it using an LLM, and provide concise, actionable insights.
 
+
+![Alt text](./images/Azura-Main.png "main page")
+
+![Alt text](./images/Azura-Chat1.png "Chat messages")
+
+![Alt text](./images/Azura-Chat2.png "Chat messages")
+
+![Alt text](./images/Azura-Run.png "Run")
+
 ## Key Features
 
 *   **Natural Language Interaction:** Communicate with the agent using plain English queries, making it accessible to users of all technical backgrounds.
