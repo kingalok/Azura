@@ -1,6 +1,6 @@
 # Azura - The Guardian of Pipelines
 
-![Alt text](./images/logo.png "Azura - The Guardian of Pipelines")
+![Azura Logo Placeholder](https://via.placeholder.com/800x400?text=Azura+Logo)
 
 ## Project Overview
 
@@ -29,7 +29,18 @@ In today's fast-paced DevOps landscape, quick identification and resolution of p
 
 Azura is built as a full-stack web application, separating the user interface from the core logic and data interactions. This architecture ensures scalability, maintainability, and flexibility in integrating various services.
 
-![Alt text](./images/agent-graph.png "Graph View")
+```mermaid
+graph TD
+    A[User] -->|Interacts via Web Browser| B(Frontend: React Application)
+    B -->|Sends API Requests (JSON)| C(Backend: Flask Application)
+    C -->|Communicates with| D(LLM: Azure OpenAI / OpenAI / Ollama)
+    C -->|Communicates with| E(Azure DevOps REST API)
+    E -->|Retrieves Data| F(Azure DevOps Services)
+    F -->|Provides Pipeline & Build Data| E
+    D -->|Provides AI Reasoning & Responses| C
+    C -->|Sends API Responses (JSON)| B
+    B -->|Displays Information| A
+```
 
 **Key Components:**
 

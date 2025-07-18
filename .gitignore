@@ -32,7 +32,6 @@ docker-compose.*.local.yml
 Thumbs.db
 
 # Build
-dist/
 build/
 *.egg
 *.whl
@@ -54,3 +53,4 @@ alok*
 
 .langgraph_api/
 .test
+myenv*
